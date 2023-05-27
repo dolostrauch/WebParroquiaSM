@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html><!--La que define la versión y estructura del documento-->
 <html lang="en">
 
 <head>
@@ -30,8 +30,8 @@
     <header class="headerinicio">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-                <img src="Images/logoStellasinfondo.png" alt="LogoStellaMaris" width="120" height="130"
-                    class="d-inline-block align-top" /><div class="Titulonavbar">Parroquia Stella Maris</div>
+                <img src="Images/Parroquia_Stella_Maris-removebg-preview.png" alt="LogoStellaMaris" width="" height=""
+                    class="d-inline-block align-top" />
                     <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                         aria-label="Toggle navigation">
@@ -40,13 +40,13 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                                <a class="nav-link" href="index.html">Inicio</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="proximosEventos.html">Próximos eventos</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="cancionero.html">Cancionero</a>
+                                <a class="nav-link active" aria-current="page" href="cancionero.html">Cancionero</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="contacto.html">Contacto</a>
@@ -59,37 +59,34 @@
                 </div>
         </nav>
     </header>
-    <!--Imagen Central-->
-    <div class="container-fluid p-0">
-        <img class="parroquiaStellaMaris" src="Images/parroquiaStellaMaris.jpg" alt="parroquiaStellaMaris">
-    </div>
-    <!--Imagenes con links-->
-    <Section class="container cajaImagenesConLink">
-        <span id="horarios"><a href="horarios.html"><img src="Images/Horarios.jpg" alt="fotosHorarios"
-                    class="fotoHorarios" style="max-width: 100%"></a></span>
 
-        <span id="misaOnline"><a href="https://www.youtube.com/@parroquiastellamarisurugua6764/featured"><img
-                    src="Images/MisasOnline.png" alt="fotoMisasOnline" class="fotoMisasOnline"
-                    style="max-width: 100%"></a></span>
-    </Section>
-    <!--Texto-->
-    <section class="container presentacionsm">
-        <h2>Sobre Stella Maris</h2>
-        <p id="presentacion"> En la calle Dr. Gabriel Otero 6489 se encuentra la parroquia Stella Maris. Fundada por el
-            arzobispo de Monevideo Juan Francisco Aragone el 24 de febrero del año 1934, es la primera parroquia bajo el
-            patrocinio de la Stella Maris; probablemente porque estaba cerca del mar.
-            Su nombre se debe a varias razones, así lo contó el actual párroco Gonzalo Estévez. “En ese lugar vivían
-            familias de pescadores. También, la Orden de los Hermanos de la Bienaventurada Virgen del Monte Carmelo ―más
-            conocida como de los Carmelitas―, quienes comenzaron con las celebraciones religiosas”, relató.
-            Según el sacerdote, la tradición enseña que “cuando se establecieron los primeros ermitaños en el Monte
-            Carmelo, en sus cultos veneraban a la Virgen como la Estrella del Mar; más tarde se le llamó Virgen del
-            Carmen”. Estas fueron las influencias que llevaron a que se llamara de esa manera.
-            Es probable que la imagen de la Virgen la haya traído la familia Arocena desde París en el año 1919. Es la
-            que acompaña a la comunidad desde entonces. Al ingresar al templo, se encuentra ubicada a la derecha.
-            El barrio, en ese momento, se llamaba Carrasco, pero anteriormente era conocido como balneario Villa del
-            Mar.</p>
-    </section>
-    <!--Footer-->
+    <div class="container-fluid p-0">
+        <img class="parroquiaStellaMaris" src="../WebParroquiaSM/Images/Guitarra.png" alt="fotoguitarra">
+    </div>
+
+    <div class="centrar-boton">
+    <a href="/Documentos/Cancionero.pdf" download="Cancionero.pdf" class="mi-boton">Descargar nuestro cancionero con acordes</a>
+    </div>
+
+<!--Texto-->
+<section class="flex-container">
+    <div class="caja">
+        <h2>Nuestro Proyecto</h2>
+        La creación del cancionero es con el objetivo de facilitar el acceso a la mayor cantidad de canciones católicas
+            posible para todos. Para lograrlo, necesitamos la colaboración de la comunidad. Agradecemos la
+            participación y comentarios de todos aquellos que deseen ayudarnos a hacer crecer este proyecto.
+            Cualquier opinión o crítica constructiva sobre el cancionero es bienvenida.
+    </div>
+</section>
+
+    <div class="centrar-boton">
+    <a href="https://open.spotify.com/playlist/0yKFL2Gph36lAQtKdfm6q8?si=b46a4f66e4e6452f" class="mi-boton">Lista de Spotify</a>
+    </div>
+    
+    <div class="centrar-boton">
+        <a href="https://www.cancionerostellamaris.com/grabacionesdelcancionero" class="mi-boton">Grabaciones</a>
+        </div>
+
     <footer>
         <div class="container-fluid d-flex justify-content-between align-items-center">
             <div class="d-flex align-items-center">
@@ -107,6 +104,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
+
 </body>
 
 </html>
