@@ -1,3 +1,4 @@
+@import '_variables.scss';
 body {
     .headerinicio {
         background-color: rgb(217, 217, 217);
@@ -9,10 +10,43 @@ body {
         .Titulonavbar {
             color: rgb(89, 89, 89);
             font-size: 1.5rem;
-            font-family: 'Montserrat thin', sans-serif;
+            font-family: $font-textos;
             display: flex;
         }
     }
+
+    .parroquiaStellaMaris { 
+        height: 75%;
+        width: 100%;
+    }
+
+    @keyframes cambioBienvenidos {
+        0% {
+          background-color:$color-primario;
+        }
+        50% {
+          background-color: rgb(171, 130, 97);
+          transform: scale(1.1);
+        }
+        100% {
+          background-color: rgb(103, 79, 59);
+        }
+      }
+      
+      .bienvenidos {
+        color: $color-secundario;
+        background-color: $color-quinto;
+        padding-top: 0.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        animation-name: cambioBienvenidos;
+        animation-duration: 3s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: initial;
+        font-family: $font-textos;
+      }
+      
 
     .cajaImagenesConLink {
         display: flex;
@@ -22,7 +56,7 @@ body {
 
 
         .fotoHorarios {
-            border: solid 0.5rem #c8bc9f;
+            border: solid 0.5rem $color-primario;
             margin: 1rem;
             transition: height 1s, width 1s;
             height: 80%;
@@ -36,7 +70,7 @@ body {
 
 
         .fotoMisasOnline {
-            border: solid 0.5rem #c8bc9f;
+            border: solid 0.5rem $color-primario;
             margin: 1rem;
             transition: height 1s, width 1s;
             height: 80%;
@@ -56,18 +90,18 @@ body {
 
     .presentacionsm {
         h2 {
-            color: #c8bc9f;
-            background-color: white;
-            font-family: 'Montserrat', sans-serif;
+            color: $color-primario;
+            background-color: $color-secundario;
+            font-family: $font-textos;
             font-size: 2rem;
             text-align: center;
             max-width: 100%;
         }
 
         #presentacion {
-            color: black;
-            background-color: white;
-            font-family: 'Hind', sans-serif;
+            color: $color-terciario;
+            background-color: $color-secundario;
+            font-family: $font-otros;
             font-size: 1rem;
             text-align: center;
             max-width: 100%;
@@ -75,7 +109,7 @@ body {
     }
 
     footer {
-        background-color: #c8bc9f;
+        background-color: $color-primario;
 
         ul {
             list-style-type: none;
@@ -88,7 +122,7 @@ body {
 
         .fa-instagram {
             font-size: 2em;
-            color: rgba(248, 248, 232, 0.806);
+            color: $color-hovers;
             display: flex;
             padding: 0.5rem;
             justify-content: center;
@@ -96,18 +130,18 @@ body {
 
         .fa-youtube {
             font-size: 2em;
-            color: rgba(248, 248, 232, 0.806);
+            color:$color-hovers;
             display: flex;
             padding: 0.5rem;
             justify-content: center;
         }
 
         .fa-instagram:hover {
-            color: white;
+            color: $color-secundario;
         }
 
         .fa-youtube:hover {
-            color: white;
+            color: $color-secundario;
         }
 
         .hola {
@@ -134,9 +168,9 @@ body {
     /*Botones de HTML cancionero*/
 
     .mi-boton {
-        background-color: #c8bc9f;
+        background-color: $color-primario;
         border: none;
-        color: white;
+        color: $color-secundario;
         padding: 1% 2%;
         text-align: center;
         text-decoration: none;
@@ -145,14 +179,14 @@ body {
         margin: 1em;
         cursor: pointer;
         border-radius: 100px;
-        font-family: 'Hind', sans-serif;
+        font-family: $font-otros;
         box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
     }
 
 
     .mi-boton:hover {
-        background-color: white;
-        color: #c8bc9f;
+        background-color: $color-secundario;
+        color: $color-primario;
     }
 
     .centrar-boton {
@@ -160,7 +194,7 @@ body {
         justify-content: center;
         align-items: center;
         height: 12vh;
-        font-family: 'Hind', sans-serif;
+        font-family: $font-otros;
         font-size: 1em;
     }
 
@@ -173,9 +207,9 @@ body {
         justify-content: center;
 
         h2 {
-            color: #c8bc9f;
-            background-color: white;
-            font-family: 'Montserrat', sans-serif;
+            color: $color-primario;
+            background-color: $color-secundario;
+            font-family: $font-textos;
             font-size: 2rem;
             text-align: center;
             max-width: 100%;
@@ -183,7 +217,7 @@ body {
 
         .caja {
             color: black;
-            font-family: 'Hind', sans-serif;
+            font-family: $font-otros;
             text-align: center;
             margin: 1rem;
         }
@@ -191,7 +225,7 @@ body {
 
 
     .formulariodecontacto {
-        background-color: #c8bc9f;
+        background-color: $color-primario;
         margin: 10rem;
         padding-bottom: 2rem;
         padding-top: 0.1rem;
@@ -201,7 +235,7 @@ body {
 
     .formulariodesuscripcion {
         display: flex;
-        background-color: #c8bc9f;
+        background-color: $color-primario;
         margin: 10rem;
         padding-bottom: 2rem;
         padding-top: 0.1rem;
@@ -218,7 +252,7 @@ body {
     .barritaarriba {
         display: flex;
         width: 100%;
-        background-color: #c8bc9f;
+        background-color: $color-primario;
         color: transparent;
         height: 3vh;
         margin: none;
@@ -229,7 +263,7 @@ body {
     .barritaabajo {
         display: flex;
         width: 100%;
-        background-color: #c8bc9f;
+        background-color: $color-primario;
         color: transparent;
         height: 1vh;
         margin: none;
@@ -237,9 +271,9 @@ body {
     }
 
     h2 {
-        color: #c8bc9f;
-        background-color: white;
-        font-family: 'Montserrat', sans-serif;
+        color: $color-primario;
+        background-color: $color-secundario;
+        font-family: $font-textos;
         font-size: 2rem;
         text-align: center;
         max-width: 100%;

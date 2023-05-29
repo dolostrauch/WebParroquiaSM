@@ -12,8 +12,37 @@ body .headerinicio .navbar-collapse {
 body .headerinicio .Titulonavbar {
   color: rgb(89, 89, 89);
   font-size: 1.5rem;
-  font-family: "Montserrat thin", sans-serif;
+  font-family: "Montserrat", sans-serif;
   display: flex;
+}
+body .parroquiaStellaMaris {
+  height: 75%;
+  width: 100%;
+}
+@keyframes cambioBienvenidos {
+  0% {
+    background-color: #c8bc9f;
+  }
+  50% {
+    background-color: rgb(171, 130, 97);
+    transform: scale(1.1);
+  }
+  100% {
+    background-color: rgb(103, 79, 59);
+  }
+}
+body .bienvenidos {
+  color: white;
+  background-color: rgb(207, 189, 177);
+  padding-top: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation-name: cambioBienvenidos;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: initial;
+  font-family: "Montserrat", sans-serif;
 }
 body .cajaImagenesConLink {
   display: flex;
