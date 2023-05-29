@@ -1,3 +1,8 @@
+body {
+  /*Proximos eventos*/
+  /*Cancionero*/
+  /*Botones de HTML cancionero*/
+}
 body .headerinicio {
   background-color: rgb(217, 217, 217);
 }
@@ -12,16 +17,31 @@ body .headerinicio .Titulonavbar {
 }
 body .cajaImagenesConLink {
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
   padding: 1rem;
-  position: relative;
+  justify-content: center;
+  align-items: center;
 }
-body .cajaImagenesConLink #horarios {
-  padding: 1rem;
+body .cajaImagenesConLink .fotoHorarios {
+  border: solid 0.5rem #c8bc9f;
+  margin: 1rem;
+  transition: height 1s, width 1s;
+  height: 80%;
+  width: 80%;
 }
-body .cajaImagenesConLink #misaOnline {
-  padding: 1rem;
+body .cajaImagenesConLink .fotoHorarios:hover {
+  height: 85%;
+  width: 85%;
+}
+body .cajaImagenesConLink .fotoMisasOnline {
+  border: solid 0.5rem #c8bc9f;
+  margin: 1rem;
+  transition: height 1s, width 1s;
+  height: 80%;
+  width: 80%;
+}
+body .cajaImagenesConLink .fotoMisasOnline:hover {
+  height: 85%;
+  width: 85%;
 }
 body .parroquiaStellaMaris {
   width: 100%;
@@ -80,19 +100,14 @@ body footer .small {
   font-size: 1em;
   color: rgba(248, 248, 232, 0.806);
 }
-
-/*Proximos eventos*/
-.tabla {
+body .tabla {
   display: flex;
   justify-content: center;
   border-style: double;
   margin-top: 5rem;
   margin-bottom: 5rem;
 }
-
-/*Cancionero*/
-/*Botones de HTML cancionero*/
-.mi-boton {
+body .mi-boton {
   background-color: #c8bc9f;
   border: none;
   color: white;
@@ -107,13 +122,11 @@ body footer .small {
   font-family: "Hind", sans-serif;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
-
-.mi-boton:hover {
+body .mi-boton:hover {
   background-color: white;
   color: #c8bc9f;
 }
-
-.centrar-boton {
+body .centrar-boton {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -121,8 +134,7 @@ body footer .small {
   font-family: "Hind", sans-serif;
   font-size: 1em;
 }
-
-.flex-container {
+body .flex-container {
   display: flex;
   background-color: transparent;
   padding: 1rem;
@@ -130,7 +142,7 @@ body footer .small {
   flex-wrap: wrap;
   justify-content: center;
 }
-.flex-container h2 {
+body .flex-container h2 {
   color: #c8bc9f;
   background-color: white;
   font-family: "Montserrat", sans-serif;
@@ -138,14 +150,13 @@ body footer .small {
   text-align: center;
   max-width: 100%;
 }
-.flex-container .caja {
+body .flex-container .caja {
   color: black;
   font-family: "Hind", sans-serif;
   text-align: center;
   margin: 1rem;
 }
-
-.formulariodecontacto {
+body .formulariodecontacto {
   background-color: #c8bc9f;
   margin: 10rem;
   padding-bottom: 2rem;
@@ -153,8 +164,7 @@ body footer .small {
   border-radius: 1rem;
   border: 1vh solid #b8aa89;
 }
-
-.formulariodesuscripcion {
+body .formulariodesuscripcion {
   display: flex;
   background-color: #c8bc9f;
   margin: 10rem;
@@ -164,12 +174,10 @@ body footer .small {
   border-radius: 1rem;
   border: 1vh solid #b8aa89;
 }
-
-.submit1 {
+body .submit1 {
   padding: 3rem;
 }
-
-.barritaarriba {
+body .barritaarriba {
   display: flex;
   width: 100%;
   background-color: #c8bc9f;
@@ -178,8 +186,7 @@ body footer .small {
   margin: none;
   padding: none;
 }
-
-.barritaabajo {
+body .barritaabajo {
   display: flex;
   width: 100%;
   background-color: #c8bc9f;
@@ -188,8 +195,7 @@ body footer .small {
   margin: none;
   padding: none;
 }
-
-h2 {
+body h2 {
   color: #c8bc9f;
   background-color: white;
   font-family: "Montserrat", sans-serif;

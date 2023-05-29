@@ -5,27 +5,47 @@ body {
         .navbar-collapse {
             justify-content: right;
         }
+
         .Titulonavbar {
             color: rgb(89, 89, 89);
             font-size: 1.5rem;
-            font-family:'Montserrat thin', sans-serif;
+            font-family: 'Montserrat thin', sans-serif;
             display: flex;
         }
     }
 
     .cajaImagenesConLink {
         display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
         padding: 1rem;
-        position: relative;
+        justify-content: center;
+        align-items: center;
 
-        #horarios {
-            padding: 1rem;
+
+        .fotoHorarios {
+            border: solid 0.5rem #c8bc9f;
+            margin: 1rem;
+            transition: height 1s, width 1s;
+            height: 80%;
+            width: 80%;
         }
 
-        #misaOnline {
-            padding: 1rem;
+        .fotoHorarios:hover {
+            height: 85%;
+            width: 85%;
+        }
+
+
+        .fotoMisasOnline {
+            border: solid 0.5rem #c8bc9f;
+            margin: 1rem;
+            transition: height 1s, width 1s;
+            height: 80%;
+            width: 80%;
+        }
+
+        .fotoMisasOnline:hover {
+            height: 85%;
+            width: 85%;
         }
     }
 
@@ -99,59 +119,122 @@ body {
             color: rgba(248, 248, 232, 0.806);
         }
     }
-}
 
-/*Proximos eventos*/
-.tabla {
-    display: flex;
-    justify-content: center;
-    border-style: double;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-}
+    /*Proximos eventos*/
+    .tabla {
+        display: flex;
+        justify-content: center;
+        border-style: double;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
 
-/*Cancionero*/
+    /*Cancionero*/
 
-/*Botones de HTML cancionero*/
+    /*Botones de HTML cancionero*/
 
-.mi-boton {
-    background-color: #c8bc9f;
-    border: none;
-    color: white;
-    padding: 1% 2%;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 1em;
-    margin: 1em;
-    cursor: pointer;
-    border-radius: 100px;
-    font-family: 'Hind', sans-serif;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-}
+    .mi-boton {
+        background-color: #c8bc9f;
+        border: none;
+        color: white;
+        padding: 1% 2%;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 1em;
+        margin: 1em;
+        cursor: pointer;
+        border-radius: 100px;
+        font-family: 'Hind', sans-serif;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    }
 
 
-.mi-boton:hover {
-    background-color: white;
-    color: #c8bc9f;
-}
+    .mi-boton:hover {
+        background-color: white;
+        color: #c8bc9f;
+    }
 
-.centrar-boton {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 12vh;
-    font-family: 'Hind', sans-serif;
-    font-size: 1em;
-}
+    .centrar-boton {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 12vh;
+        font-family: 'Hind', sans-serif;
+        font-size: 1em;
+    }
 
-.flex-container {
-    display: flex;
-    background-color: transparent;
-    padding: 1rem;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    .flex-container {
+        display: flex;
+        background-color: transparent;
+        padding: 1rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        h2 {
+            color: #c8bc9f;
+            background-color: white;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2rem;
+            text-align: center;
+            max-width: 100%;
+        }
+
+        .caja {
+            color: black;
+            font-family: 'Hind', sans-serif;
+            text-align: center;
+            margin: 1rem;
+        }
+    }
+
+
+    .formulariodecontacto {
+        background-color: #c8bc9f;
+        margin: 10rem;
+        padding-bottom: 2rem;
+        padding-top: 0.1rem;
+        border-radius: 1rem;
+        border: 1vh solid #b8aa89;
+    }
+
+    .formulariodesuscripcion {
+        display: flex;
+        background-color: #c8bc9f;
+        margin: 10rem;
+        padding-bottom: 2rem;
+        padding-top: 0.1rem;
+        padding-right: 5rem;
+        border-radius: 1rem;
+        border: 1vh solid #b8aa89;
+    }
+
+
+    .submit1 {
+        padding: 3rem;
+    }
+
+    .barritaarriba {
+        display: flex;
+        width: 100%;
+        background-color: #c8bc9f;
+        color: transparent;
+        height: 3vh;
+        margin: none;
+        padding: none;
+
+    }
+
+    .barritaabajo {
+        display: flex;
+        width: 100%;
+        background-color: #c8bc9f;
+        color: transparent;
+        height: 1vh;
+        margin: none;
+        padding: none;
+    }
 
     h2 {
         color: #c8bc9f;
@@ -161,66 +244,4 @@ body {
         text-align: center;
         max-width: 100%;
     }
-
-    .caja {
-        color: black;
-        font-family: 'Hind', sans-serif;
-        text-align: center;
-        margin: 1rem;
-    }
-}
-
-
-.formulariodecontacto {
-    background-color: #c8bc9f;
-    margin: 10rem;
-    padding-bottom: 2rem;
-    padding-top: 0.1rem;
-    border-radius: 1rem;
-    border: 1vh solid #b8aa89;
-}
-
-.formulariodesuscripcion {
-    display: flex;
-    background-color: #c8bc9f;
-    margin: 10rem;
-    padding-bottom: 2rem;
-    padding-top: 0.1rem;
-    padding-right: 5rem;
-    border-radius: 1rem;
-    border: 1vh solid #b8aa89;
-}
-
-.submit1 {
-    padding: 3rem;
-}
-
-.barritaarriba {
-    display: flex;
-    width: 100%;
-    background-color: #c8bc9f;
-    color: transparent;
-    height: 3vh;
-    margin: none;
-    padding: none;
-
-}
-
-.barritaabajo {
-    display: flex;
-    width: 100%;
-    background-color: #c8bc9f;
-    color: transparent;
-    height: 1vh;
-    margin: none;
-    padding: none;
-}
-
-h2 {
-    color: #c8bc9f;
-    background-color: white;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2rem;
-    text-align: center;
-    max-width: 100%;
 }
