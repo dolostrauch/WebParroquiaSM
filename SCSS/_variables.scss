@@ -1,3 +1,5 @@
+/*Variables*/
+
 $color-primario: #c8bc9f;
 $color-secundario: white;
 $color-terciario: black;
@@ -7,3 +9,27 @@ $color-hovers: rgba(248, 248, 232, 0.806);
 
 $font-textos: 'Montserrat', sans-serif;
 $font-otros: 'Hind', sans-serif;
+
+/*extend*/
+
+%titulospaginas {
+    color: $color-secundario;
+    background-color: $color-quinto;
+    padding-top: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation-name: cambioBienvenidos;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: initial;
+    font-family: $font-textos;
+}
+
+/*Mixin*/
+
+@mixin centrar-elemento {
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+}

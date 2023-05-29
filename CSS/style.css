@@ -1,3 +1,20 @@
+/*Variables*/
+/*extend*/
+body .fijatefechas, body .descargacancionero, body .contactanos, body .suscribite, body .bienvenidos {
+  color: white;
+  background-color: rgb(207, 189, 177);
+  padding-top: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation-name: cambioBienvenidos;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: initial;
+  font-family: "Montserrat", sans-serif;
+}
+
+/*Mixin*/
 body {
   /*Proximos eventos*/
   /*Cancionero*/
@@ -31,24 +48,14 @@ body .parroquiaStellaMaris {
     background-color: rgb(103, 79, 59);
   }
 }
-body .bienvenidos {
-  color: white;
-  background-color: rgb(207, 189, 177);
-  padding-top: 0.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  animation-name: cambioBienvenidos;
-  animation-duration: 3s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: initial;
-  font-family: "Montserrat", sans-serif;
+body .suscribite {
+  border: solid 1px black;
 }
 body .cajaImagenesConLink {
   display: flex;
-  padding: 1rem;
   justify-content: center;
   align-items: center;
+  padding: 1rem;
 }
 body .cajaImagenesConLink .fotoHorarios {
   border: solid 0.5rem #c8bc9f;

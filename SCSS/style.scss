@@ -34,25 +34,31 @@ body {
       }
       
       .bienvenidos {
-        color: $color-secundario;
-        background-color: $color-quinto;
-        padding-top: 0.5rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        animation-name: cambioBienvenidos;
-        animation-duration: 3s;
-        animation-timing-function: ease-in-out;
-        animation-iteration-count: initial;
-        font-family: $font-textos;
+        @extend %titulospaginas;
+      }
+
+      .suscribite {
+        @extend %titulospaginas;
+        border: solid 1px $color-terciario;
+      }
+
+      .contactanos {
+        @extend %titulospaginas;
+      }
+
+      .descargacancionero {
+        @extend %titulospaginas;
+      }
+
+      .fijatefechas {
+        @extend %titulospaginas;
       }
       
 
     .cajaImagenesConLink {
-        display: flex;
+        @include centrar-elemento;
         padding: 1rem;
-        justify-content: center;
-        align-items: center;
+
 
 
         .fotoHorarios {
@@ -190,9 +196,7 @@ body {
     }
 
     .centrar-boton {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include centrar-elemento;
         height: 12vh;
         font-family: $font-otros;
         font-size: 1em;
