@@ -230,22 +230,24 @@ body {
 
     .formulariodecontacto {
         background-color: $color-primario;
-        margin: 10rem;
         padding-bottom: 2rem;
         padding-top: 0.1rem;
         border-radius: 1rem;
         border: 1vh solid #b8aa89;
+        margin-top: 10em;
+        margin-bottom: 10em;
     }
 
     .formulariodesuscripcion {
         display: flex;
         background-color: $color-primario;
-        margin: 10rem;
         padding-bottom: 2rem;
         padding-top: 0.1rem;
         padding-right: 5rem;
         border-radius: 1rem;
         border: 1vh solid #b8aa89;
+        margin-top: 10em;
+        margin-bottom: 10em;
     }
 
 
